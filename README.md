@@ -4,7 +4,7 @@ Run a sequence of data by batch, with optional concurrency, and optional progres
 [![Build Status](https://github.com/lovego/batches/actions/workflows/go.yml/badge.svg)](https://github.com/lovego/batches/actions/workflows/go.yml)
 [![Coverage Status](https://coveralls.io/repos/github/lovego/batches/badge.svg?branch=master)](https://coveralls.io/github/lovego/batches)
 [![Go Report Card](https://goreportcard.com/badge/github.com/lovego/batches)](https://goreportcard.com/report/github.com/lovego/batches)
-[![Documentation](https://pkg.go.dev/badge/github.com/lovego/batches)](https://pkg.go.dev/github.com/lovego/batches@v0.0.1)
+[![Documentation](https://pkg.go.dev/badge/github.com/lovego/batches)](https://pkg.go.dev/github.com/lovego/batches@v0.0.2)
 
 ## Install
 `$ go get github.com/lovego/batches`

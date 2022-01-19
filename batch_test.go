@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-func ExampleBatchesRun() {
+func ExampleBatches_Run() {
 	err := Batches{
 		From:      1,
 		To:        307,
@@ -31,7 +31,7 @@ func ExampleBatchesRun() {
 	// 301 307
 }
 
-func ExampleBatchesRun_desc() {
+func ExampleBatches_Run_desc() {
 	err := Batches{
 		From:      307,
 		To:        7,
@@ -52,7 +52,7 @@ func ExampleBatchesRun_desc() {
 	// 7 7
 }
 
-func ExampleBatchesRun_withError() {
+func ExampleBatches_Run_withError() {
 	err := Batches{
 		From:      1,
 		To:        307,
@@ -76,7 +76,7 @@ func ExampleBatchesRun_withError() {
 	// error
 }
 
-func ExampleBatchesRun_concurrently() {
+func ExampleBatches_Run_concurrently() {
 	var result = [][2]int64{}
 	var lock sync.Mutex
 	err := Batches{
@@ -106,7 +106,7 @@ func ExampleBatchesRun_concurrently() {
 	// [[307 208] [207 108] [107 8] [7 7]]
 }
 
-func ExampleBatchesRun_concurrentlyWithError() {
+func ExampleBatches_Run_concurrentlyWithError() {
 	err := Batches{
 		From:        1,
 		To:          7,
@@ -126,7 +126,7 @@ func ExampleBatchesRun_concurrentlyWithError() {
 	// Output: error
 }
 
-func ExampleBatchesRun_concurrentlyWithError2() {
+func ExampleBatches_Run_concurrentlyWithError2() {
 	err := Batches{
 		From:        1,
 		To:          7,
@@ -147,7 +147,7 @@ func ExampleBatchesRun_concurrentlyWithError2() {
 	// Output: error
 }
 
-func ExampleBatchesRun_singleStep() {
+func ExampleBatches_Run_singleStep() {
 	err := Batches{
 		From: 3,
 		To:   1,
@@ -166,7 +166,7 @@ func ExampleBatchesRun_singleStep() {
 	// 1 1
 }
 
-func ExampleBatchesRun_singleBatch() {
+func ExampleBatches_Run_singleBatch() {
 	err := Batches{
 		From:      3,
 		To:        1,
@@ -185,7 +185,7 @@ func ExampleBatchesRun_singleBatch() {
 	// 3 1
 }
 
-func ExampleBatchesRun_oneNumber() {
+func ExampleBatches_Run_oneNumber() {
 	err := Batches{
 		From: 3,
 		To:   3,
@@ -203,7 +203,7 @@ func ExampleBatchesRun_oneNumber() {
 	// 3 3
 }
 
-func ExampleBatchesRun_oneNumber2() {
+func ExampleBatches_Run_oneNumber2() {
 	err := Batches{
 		From:      3,
 		To:        3,
